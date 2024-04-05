@@ -1,10 +1,10 @@
 Package: xue
-Title: Visualize missing data oercentage
+Title: Visualize missing data percentage
 Version: 0.0.0.9000
 Authors@R: 
     person("Yuqing", "Xue", , "drxueyuqing@163.com", role = c("aut", "cre"),
            comment = c(ORCID = "YOUR-ORCID-ID"))
-Description: It visualizes missing data situations for your dataset.
+Description: It visualizes missing data situations in your dataset.
 License: MIT + file LICENSE
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
