@@ -4,9 +4,10 @@
 #'
 #' @return A barplot showing bars of missing values percentages for each variable
 #' 
-#' 
 #' @importFrom stats reorder
 #' @export
+#'
+#' R与统计 on Bilibili
 #'
 #' @examples
 #' x <- mtcars
