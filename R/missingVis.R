@@ -1,8 +1,11 @@
-#' Title
+#' Nice-looking missing value rates barplots
 #'
-#' @param dataset The dataset you want to check
+#' @param dataset The dataset you want to check upon
 #'
 #' @return A barplot showing bars of missing values percentages for each variable
+#' 
+#' Xue! Alert the following
+#' @importFrom stats reorder
 #' @export
 #'
 #' @examples
@@ -10,6 +13,7 @@
 #' missingVis(x)
 #' 
 missingVis <- function(dataset) {
+  stopifnot("Input must be a dataframe" =  is.data.frame(dataset))
   missing_rate <- tibble::as_tibble(cbind(skimr::skim(dataset)[2],1-skimr::skim(dataset)[4]))
   missing_rate |>
     ggplot2::ggplot(mapping = ggplot2::aes(x = reorder(skim_variable,-complete_rate), y = complete_rate*100)
