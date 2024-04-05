@@ -4,7 +4,7 @@
 #'
 #' @return A barplot showing bars of missing values percentages for each variable
 #' 
-#' Xue! Alert the following
+#' 
 #' @importFrom stats reorder
 #' @export
 #'
