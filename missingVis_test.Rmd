@@ -1,0 +1,67 @@
+---
+title: "Untitled"
+output: html_document
+date: "2024-04-05"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+### Datasets Testing
+
+```{r}
+library(tidyverse)
+library(skimr)
+library(autoReg)
+```
+
+``` R
+stopifnot("Input must be a dataframe" =  is.data.frame(dataset))
+```
+
+正确的错误信息
+
+```{r}
+#missingVis(c(1,2,3))
+```
+
+### Test more types of dataset
+
+#### 1. R datasets (Built-in, or from R package)
+
+```{r}
+missingVis(palmerpenguins::penguins)
+```
+
+```{r}
+# from nycflights13
+missingVis(nycflights13::weather)
+```
+
+```{r}
+missingVis(nycflights13::flights)
+```
+
+```{r}
+Kaggle_EVpopulation <- readr::read_csv("/Users/xue/Desktop/NA_Visual/data/Electric_Vehicle_Population_Size_History_By_County_.csv")
+```
+
+```{r}
+glimpse(Kaggle_EVpopulation)
+```
+
+```{r}
+gaze(Kaggle_EVpopulation)
+```
+
+Something wrong.
+
+```{r}
+Kaggle_EVpopulation |> skim()
+# 86/20819
+```
+
+```{r}
+missingVis(Kaggle_EVpopulation)
+```
