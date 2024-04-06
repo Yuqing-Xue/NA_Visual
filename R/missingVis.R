@@ -1,13 +1,14 @@
 #' Nice-looking missing value rates barplots
 #'
-#' @param dataset The dataset you want to check upon
+#' @param dataset The dataset you want to check upon. Should be of dataframe type
 #'
 #' @return A barplot showing bars of missing values percentages for each variable
 #' 
 #' @importFrom stats reorder
+#' 
 #' @export
 #'
-#' R与统计 on Bilibili
+#' 
 #'
 #' @examples
 #' x <- mtcars
