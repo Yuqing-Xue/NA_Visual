@@ -1,4 +1,4 @@
-#' Nice-looking missing value rates barplots
+#' Nice-looking missing value rates barplots for Bilibili, guys
 #'
 #' @param dataset The dataset you want to check upon. Should be of dataframe type
 #'
@@ -7,9 +7,6 @@
 #' @importFrom stats reorder
 #' 
 #' @export
-#'
-#' 
-#'
 #' @examples
 #' x <- mtcars
 #' missingVis(x)
