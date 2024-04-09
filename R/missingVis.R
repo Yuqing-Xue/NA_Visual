@@ -1,8 +1,8 @@
-#' Nice-looking missing value rates barplots. It's for Bilibili, guys!
+#' Nice-looking missing value rates barplots. 
 #'
-#' @param dataset The dataset you want to check upon. Should be of dataframe type
+#' @param dataset The dataset of interest, with the type of dataframe preferred. 
 #'
-#' @return A barplot showing bars of missing values percentages for each variable
+#' @return A barplot presenting bars of missing values percentages for each variable
 #' 
 #' @importFrom stats reorder
 #' 
