@@ -12,7 +12,7 @@
 #' missingVis(x)
 #' 
 missingVis <- function(dataset) {
-  stopifnot("Input must be a dataframe" =  is.data.frame(dataset))
+  stopifnot("The input your provided should be a dataframe" =  is.data.frame(dataset))
   missing_rate <- tibble::as_tibble(cbind(skimr::skim(dataset)[2],1-skimr::skim(dataset)[4]))
   missing_rate |>
     ggplot2::ggplot(mapping = ggplot2::aes(x = reorder(skim_variable,-complete_rate), y = complete_rate*100)
